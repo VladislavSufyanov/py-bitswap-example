@@ -24,4 +24,4 @@ Running example (2 local peers):
     
     mkdir storage_1 storage_2
     python3.8 main.py --peer-name first_peer --storage-path storage_1
-    python3.8 main.py --kad-port 21301 --web-socket-port 10101 --connect-port 10101 --peer-name second_peer --storage-path storage_2 --nodes-adr 127.0.0.1:21300
+    python3.8 main.py --kad-port 21301 --web-socket-port 10101 --connect-port 10101 --peer-name second_peer --storage-path storage_2 --peers-adr 127.0.0.1:21300
