@@ -1,3 +1,3 @@
 [submodule "bitswap"]
 	path = bitswap
-	url = git@github.com:VladislavSufyanov/py-bitswap.git
+	url = https://github.com/VladislavSufyanov/py-bitswap.git
