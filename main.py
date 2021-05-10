@@ -58,8 +58,10 @@ def main(args: Optional[Sequence[str]] = None) -> int:
     parser.add_argument('--kad-host', type=str, default='0.0.0.0', help='Kademlia host')
     parser.add_argument('--web-socket-port', type=int, default=10100, help='WebSocket server port')
     parser.add_argument('--web-socket-host', type=str, default='0.0.0.0', help='WebSocket server host')
-    parser.add_argument('--connect-port', type=int, default=10100, help='WebSocket server port')
-    parser.add_argument('--connect-host', type=str, default='127.0.0.1', help='WebSocket server host')
+    parser.add_argument('--connect-port', type=int, default=10100,
+                        help='WebSocket server port that is being published in Kademlia')
+    parser.add_argument('--connect-host', type=str, default='127.0.0.1',
+                        help='WebSocket server host that is being published in Kademlia')
     parser.add_argument('--nodes-adr', type=str, nargs='*', default=[],
                         help='Format: ip:port, ip:port ...')
     parser.add_argument('--log-level', type=str, default='INFO',
